@@ -26,7 +26,8 @@ console.log("we alled useEffect");
 localStorage.setItem("expenses",JSON.stringify(expenses));
  },[expenses]);
  useEffect(()=>{
-   localStorage.removeItem("expenses")
+   
+  clearItems();
  },[]);
  const handleCharge=e=>{
    console.log(`charge:${e.target.value}`);
